@@ -1,4 +1,4 @@
-
+const { randomUUID } = require("node:crypto");
 const { test, before, after } = require("node:test");
 const assert = require("node:assert");
 const app = require("../server");
@@ -7,7 +7,7 @@ let server;
 let baseURL;
 
 const testAudit = {
-    id: "test-audit-001",
+    id:  randomUUID(),
     restaurant: "Test Restaurant",
     inspector: "Test Inspector",
     date: "2026-11-10",

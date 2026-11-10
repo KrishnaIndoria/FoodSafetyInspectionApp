@@ -16,5 +16,14 @@
     "observations": "Test kitchen inspection",
     "status": "Pass",
     "receivedAt": "2026-11-10T08:29:54.905Z"
+  },
+  {
+    "id": "56d51148-0212-4be3-92fc-40ec3591ff34",
+    "restaurant": "Test Restaurant",
+    "inspector": "Test Inspector",
+    "date": "2026-11-10",
+    "observations": "Test kitchen inspection",
+    "status": "Pass",
+    "receivedAt": "2026-11-10T09:22:33.780Z"
   }
 ]
