@@ -7,5 +7,14 @@
     "observations": "Kitchen cleanliness and food storage checked",
     "status": "Needs Improvement",
     "receivedAt": "2026-11-10T07:48:21.286Z"
+  },
+  {
+    "id": "test-audit-001",
+    "restaurant": "Test Restaurant",
+    "inspector": "Test Inspector",
+    "date": "2026-11-10",
+    "observations": "Test kitchen inspection",
+    "status": "Pass",
+    "receivedAt": "2026-11-10T08:29:54.905Z"
   }
 ]

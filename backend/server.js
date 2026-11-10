@@ -98,6 +98,10 @@ app.get("/api/inspections", (req, res) => {
     res.json(readInspections());
 });
 
-app.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}`);
-});
+if (require.main === module) {
+    app.listen(PORT, () => {
+        console.log(`Server running at http://localhost:${PORT}`);
+    });
+}
+
+module.exports = app;
