@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Safety Inspection App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Food Safety Inspection System</h1>
+        <p>Restaurant Inspection and Audit Portal</p>
+    </header>
+
+    <main>
+        <section class="status-card">
+            <span id="connectionStatus">Checking connection...</span>
+            <span id="pendingCount">Pending audits: 0</span>
+        </section>
+
+        <section class="form-card">
+            <h2>New Inspection Audit</h2>
+
+            <form id="inspectionForm">
+
+                <label for="restaurant">Restaurant Name</label>
+                <input type="text" id="restaurant" required
+                    placeholder="Enter restaurant name">
+
+                <label for="inspector">Inspector Name</label>
+                <input type="text" id="inspector" required
+                    placeholder="Enter inspector name">
+
+                <label for="date">Inspection Date</label>
+                <input type="date" id="date" required>
+
+                <label for="observations">Food Safety Observations</label>
+                <textarea id="observations" rows="4" required
+                    placeholder="Enter inspection observations"></textarea>
+
+                <label for="status">Inspection Result</label>
+                <select id="status" required>
+                    <option value="">Select result</option>
+                    <option value="Pass">Pass</option>
+                    <option value="Needs Improvement">Needs Improvement</option>
+                    <option value="Fail">Fail</option>
+                </select>
+
+                <button type="submit">Save Inspection</button>
+            </form>
+
+            <p id="message"></p>
+        </section>
+
+        <section class="form-card">
+            <h2>Saved Inspections</h2>
+            <div id="auditList">
+                <p>No inspections saved yet.</p>
+            </div>
+            <button id="syncButton" type="button">Sync Pending Audits</button>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
